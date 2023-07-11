@@ -36,4 +36,13 @@
         return prompt("Your choice?");
     }
 
+    function game() {
+        let playerSelection, computerSelection;
+        for (let i = 0; i < 5; i++) {
+            playerSelection = getPlayerChoice();
+            computerSelection = getComputerChoice();
+            playRound(playerSelection, computerSelection);    
+        }
+    }
+    
 </script>
